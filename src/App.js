@@ -4,6 +4,7 @@ import Login from './Components/Login';
 import Admin from './Components/Admin';
 import User from './Components/User';
 import Insurance from './Components/Insurance';
+import BiddingPage from './Components/BiddingPage';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
 <Route path="/admin" element={<Admin />} />
 <Route path="/user" element={<User />} />
 <Route path="/Insurance" element={<Insurance />} />
+<Route path="/Bid" element={<BiddingPage />} />
 </Routes>
 </BrowserRouter>
 

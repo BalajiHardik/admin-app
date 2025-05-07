@@ -9,7 +9,8 @@ function User() {
       <nav className="user-nav">
         <ul>
           <li>
-            <Link to="/insurance">Insurance</Link>
+            <Link to="/insurance">Insurance</Link><br/>
+            <Link to="/Bid">Bidding</Link>
           </li>
         </ul>
       </nav>

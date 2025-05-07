@@ -53,6 +53,8 @@ const UserForm = () => {
      console.error('Error submitting crop details:', error);
    }
  };
+ const today = new Date();
+ const maxSowingDate = new Date(today.getFullYear(), today.getMonth(), today.getDate());
  return (
 <div className="user-form-container">
 <h2>Submit Crop Details</h2>
@@ -83,7 +85,7 @@ const UserForm = () => {
 </label>
 <label>
          Sowing Date:
-<input type="date" name="sowingDate" value={formData.sowingDate} onChange={handleChange} />
+<input type="date" name="sowingDate" value={formData.sowingDate} onChange={handleChange} max={maxSowingDate.toISOString().split('T')[0]} />
 </label>
 <label>
          Estimated Shelf Life:

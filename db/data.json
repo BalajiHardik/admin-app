@@ -51,6 +51,31 @@
       "image": "paddy.jpg",
       "document": "paddy.pdf",
       "status": "Approved"
+    },
+    {
+      "id": "5562",
+      "cropName": "Wheat",
+      "cropType": "food crop",
+      "variety": "durum wheat",
+      "quantity": "100",
+      "price": "10",
+      "harvestDate": "2025-05-07",
+      "sowingDate": "2025-04-09",
+      "shelfLife": "Two month",
+      "image": "wheat.webp",
+      "document": "durum wheat.pdf",
+      "status": "pending"
     }
-  ]
+  ],
+  "bids": [
+ {
+   "id": 1,
+   "cropId": "abc123",
+   "bidder": "User1",
+   "amount": "1200",
+   "status": "Pending",
+   "timestamp": "2025-05-07T14:30:00.000Z",
+   "notes": ""
+ }
+]
 }
