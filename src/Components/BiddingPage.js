@@ -10,14 +10,12 @@ const BiddingPage = () => {
  const [editingBid, setEditingBid] = useState(null);
  const [newStatus, setNewStatus] = useState('');
  const [reason, setReason] = useState('');
- // Fetch approved crops
  useEffect(() => {
    axios.get('http://localhost:8000/crops').then(res => {
      const approved = res.data.filter(crop => crop.status === 'approved');
      setCrops(approved);
    });
  }, []);
- // Fetch all bids
  const fetchBids = async () => {
    const res = await axios.get('http://localhost:8000/bids');
    setBids(res.data);
@@ -25,7 +23,6 @@ const BiddingPage = () => {
  useEffect(() => {
    fetchBids();
  }, []);
- // Handle bid submission
  const handleBidSubmit = async (e) => {
    e.preventDefault();
    const bid = {
@@ -42,7 +39,6 @@ const BiddingPage = () => {
    setSelectedCrop(null);
    fetchBids();
  };
- // Handle bid status update
  const handleStatusUpdate = async (id) => {
    await axios.patch(`http://localhost:8000/bids/${id}`, {
      status: newStatus,
