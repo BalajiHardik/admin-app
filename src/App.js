@@ -5,7 +5,7 @@ import Admin from './Components/Admin';
 import User from './Components/User';
 import Insurance from './Components/Insurance';
 import BiddingPage from './Components/BiddingPage';
-
+import UserForm from './Components/UserForm';
 function App() {
 
   return (
@@ -17,6 +17,7 @@ function App() {
 <Route path="/user" element={<User />} />
 <Route path="/Insurance" element={<Insurance />} />
 <Route path="/Bid" element={<BiddingPage />} />
+<Route path="/UserForm" element={<UserForm />} />
 </Routes>
 </BrowserRouter>
 

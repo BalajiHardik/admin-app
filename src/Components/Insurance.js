@@ -2,7 +2,7 @@ import React from 'react'
 
 function Insurance() {
   return (
-    <div>Insurance</div>
+    <div><h1 style={{textAlign:"center"}}>Page under development :(</h1></div>
   )
 }
 
